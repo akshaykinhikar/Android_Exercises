@@ -8,7 +8,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity //Changed from activity to FragmentActivity
+{
 
 	//getSupportFragmentManager() for v4
 	FragmentManager fm = getSupportFragmentManager();
@@ -19,15 +20,13 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
         
      // Create new fragment and transaction
-        Fragment first = new FirstFragment();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.add(R.id.fragmentHolder, first);
-        ft.commit();
-        
+        Fragment first = new FirstFragment(); //get FirstFragment in first
+        FragmentTransaction ft = fm.beginTransaction(); //begin Transaction
+        ft.add(R.id.fragmentHolder, first); //add fragment "first" in activity main
+        ft.commit(); //commit transaction
+       
     }
 
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
