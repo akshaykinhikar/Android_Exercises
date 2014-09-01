@@ -30,11 +30,11 @@ public class MainActivity extends FragmentActivity {
         return true;
     }
     
-//    void go(){
-//    	Fragment second = new SecondFragment();
-//    	FragmentTransaction ft = fm.beginTransaction();
-//    	ft.replace(R.id.secondHolder, second);
-//    	ft.commit();
-//    }
+   void go(){
+    	Fragment second = new SecondFragment();
+    	FragmentTransaction ft = fm.beginTransaction();
+    	ft.replace(R.id.secondHolder, second);
+    	ft.commit();
+    }
     
 }
