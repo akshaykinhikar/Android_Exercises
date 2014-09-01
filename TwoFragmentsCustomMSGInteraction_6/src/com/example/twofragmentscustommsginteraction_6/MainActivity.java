@@ -1,13 +1,17 @@
 package com.example.twofragmentscustommsginteraction_6;
 
+import com.example.twofragmentscustommsginteraction_6.FirstFragment.LoadSecondFragment;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements LoadSecondFragment {
 
     FragmentManager fm = getSupportFragmentManager();
 	@Override
@@ -29,12 +33,27 @@ public class MainActivity extends FragmentActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
-   void go(){
-    	Fragment second = new SecondFragment();
+    @Override
+   public void go(String a){
+	   
+    	String sa = a;
+    		
+	    Fragment second = new SecondFragment(sa);
     	FragmentTransaction ft = fm.beginTransaction();
+    	//tv2.putString(sa);
+        
     	ft.replace(R.id.secondHolder, second);
     	ft.commit();
+    	
+        	
     }
+
+
+
+
+
+
+
+
     
 }

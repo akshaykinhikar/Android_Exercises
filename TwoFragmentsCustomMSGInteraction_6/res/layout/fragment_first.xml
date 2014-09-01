@@ -14,13 +14,14 @@
         android:layout_centerVertical="true"
         android:text="Pass Text" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <EditText
+        android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_marginBottom="59dp"
-        android:text="TextView" />
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="28dp"
+        android:ems="10" />
 
 </RelativeLayout>
