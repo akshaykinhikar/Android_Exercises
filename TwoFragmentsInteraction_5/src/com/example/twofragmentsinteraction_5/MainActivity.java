@@ -6,20 +6,22 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
 
-public class MainActivity extends FragmentActivity {
-	
+public class MainActivity extends FragmentActivity implements OnClickListener {
+	 FragmentManager fm =getSupportFragmentManager();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     
-        FragmentManager fm =getSupportFragmentManager();
+       
         Fragment one = new FirstFragment();
         FragmentTransaction ft = fm.beginTransaction();
-        
         ft.add(R.id.FragmentHolder,one);
-        
+        ft.commit();
+       
     
     }
 
@@ -31,4 +33,24 @@ public class MainActivity extends FragmentActivity {
         return true;
     }
     
+    
+    //method for loading second fragment
+    public void go(){	
+    	
+    	Fragment second = new SecondFragment();
+    	FragmentTransaction ft = fm.beginTransaction();
+    	ft.replace(R.id.FragmentHolder, second);
+    	ft.commit();
+    }
+
+
+	@Override
+	public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	
 }
+

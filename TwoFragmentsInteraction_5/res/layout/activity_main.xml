@@ -9,14 +9,6 @@
     tools:context=".MainActivity"
     android:id="@+id/FragmentHolder" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="106dp"
-        android:layout_marginTop="141dp"
-        android:text="To Second Fragment" />
+    
 
 </RelativeLayout>
