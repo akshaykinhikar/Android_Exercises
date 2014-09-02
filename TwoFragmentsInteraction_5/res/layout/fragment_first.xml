@@ -1,9 +1,10 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment" 
     android:id="@+id/one"
+    android:background="#33B5E5"
     >
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,8 +13,11 @@
        android:id="@+id/button1"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginLeft="106dp"
-       android:layout_marginTop="141dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginLeft="44dp"
+       android:layout_marginTop="144dp"
+       android:background="#99CC00"
        android:text="To Second Fragment" />
 
-</FrameLayout>
+</RelativeLayout>
