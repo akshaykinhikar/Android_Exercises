@@ -2,7 +2,10 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal"
-    android:id="@+id/FragmentHolder" >
+    android:id="@+id/FragmentHolder"
+    android:padding="50dp"
+    android:background="#FFE3A0"
+     >
 
     <FrameLayout
         android:id="@+id/firstHolder"

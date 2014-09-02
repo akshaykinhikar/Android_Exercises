@@ -17,7 +17,7 @@ public class MainActivity extends FragmentActivity {
     FragmentManager fm = getSupportFragmentManager();
     
     Fragment one = new FirstFragment();
-    Fragment two = new SecongFragment();
+    Fragment two = new SecondFragment();
     
     FragmentTransaction ft = fm.beginTransaction();
     
