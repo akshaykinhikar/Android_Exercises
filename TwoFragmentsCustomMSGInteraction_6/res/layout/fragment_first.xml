@@ -3,12 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment"
-    android:paddingLeft="50dp"
-    android:paddingTop="50dp"
-    android:paddingRight="50dp"
-    android:paddingBottom="50dp"
-    android:layout_margin="50dp"
-    android:background="#FFBB33"
+    android:background="#33B5E5"
      >
 
     <!-- TODO: Update blank fragment layout -->
@@ -19,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Pass Text" />
+        android:text="Pass Text"
+        android:background="#E3FFFA" />
 
     <EditText
         android:id="@+id/editText1"

@@ -8,6 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
     android:id="@+id/fragment_holder"
-    android:background="#ff9607"
+    android:background="#FFE3A0"
+    android:padding="50dp"
      >
 </RelativeLayout>
