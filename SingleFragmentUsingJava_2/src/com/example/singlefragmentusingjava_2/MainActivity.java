@@ -26,11 +26,4 @@ public class MainActivity extends FragmentActivity //Changed from activity to Fr
         ft.commit(); //commit transaction
        
     }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-    
 }
