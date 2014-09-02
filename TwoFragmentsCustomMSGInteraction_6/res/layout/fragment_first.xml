@@ -2,7 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment" >
+    tools:context=".FirstFragment"
+    android:paddingLeft="50dp"
+    android:paddingTop="50dp"
+    android:paddingRight="50dp"
+    android:paddingBottom="50dp"
+    android:layout_margin="50dp"
+    android:background="#FFBB33"
+     >
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -22,6 +29,9 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="40dp"
         android:layout_marginRight="28dp"
+        android:inputType="text"
+		android:hint="Your Text"
+       android:textColor="#CC0000"
         android:ems="10" />
 
 </RelativeLayout>

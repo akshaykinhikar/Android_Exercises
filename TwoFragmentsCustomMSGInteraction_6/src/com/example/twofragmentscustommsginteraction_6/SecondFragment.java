@@ -1,6 +1,5 @@
 package com.example.twofragmentscustommsginteraction_6;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,28 +11,23 @@ import android.widget.TextView;
  * A simple {@link android.support.v4.app.Fragment} subclass.
  * 
  */
-@SuppressLint("ValidFragment") public class SecondFragment extends Fragment {
- String ms;
-	public SecondFragment() {
-
-	
-	}
-
-	public SecondFragment(String sa) {
-		ms = sa;
-	}
-
+public class SecondFragment extends Fragment {
+	TextView tv2; 
+	static final String  KEY_MESSAGE = "message";
+	String msg = "";
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// Inflate the layout for this fragment
-		  
-		View v= inflater.inflate(R.layout.fragment_second, container, false);
-	
-		TextView tv2= (TextView)v.findViewById(R.id.tv2); 
-		tv2.setText(ms);
-	//	String strtext = getArguments().getString("sa"); 
+		
+		View v = inflater.inflate(R.layout.fragment_second, container, false);
+		
+		Bundle args =getArguments();
+		msg = (String) args.get(KEY_MESSAGE);
+		
+		tv2 = (TextView) v.findViewById(R.id.tv2);
+		tv2.setText(msg);
 		return v;
 	}
+
 
 }
