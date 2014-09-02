@@ -7,22 +7,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
+    android:background="#FFE3A0"
+    android:padding="50dp"
+    android:orientation="vertical"
     >
     
     <fragment 
         class="com.example.twofragmentsusingxml_3.FirstFragment"
         android:id="@+id/first"
         android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
     </fragment>
 
      <fragment 
         class="com.example.twofragmentsusingxml_3.SecondFragment"
         android:id="@+id/secondFragment"
         android:layout_weight="1"
- 	    android:layout_width="0dp"
-        android:layout_height="match_parent">
+ 	    android:layout_height="0dp"
+        android:layout_width="match_parent">
     </fragment>
     
 
