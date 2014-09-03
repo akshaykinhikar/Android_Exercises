@@ -21,25 +21,16 @@ public class MainActivity extends Activity implements OnClickListener{
 		btn.setOnClickListener(this);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	
-	public void myToast(){
+	public void myToast(){						//Custom Toast
 		Context context = getApplicationContext();
 		CharSequence text = "Button Pressed";
 		int duration = Toast.LENGTH_SHORT;
-
 		Toast toast = Toast.makeText(context, text, duration);
 		toast.show();
 	}
 	@Override
 	public void onClick(View v) {
-		myToast();
+		myToast();							//call to Toast
 		
 	}
 
