@@ -2,6 +2,7 @@ package com.example.onclick_xml_8_v1;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,7 +30,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		// 
+		Log.d("My Tag", "In onClick");
 		
 	}
 
