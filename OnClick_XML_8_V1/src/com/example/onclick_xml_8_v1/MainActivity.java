@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener{
 	
@@ -30,7 +31,8 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		Log.d("My Tag", "In onClick");
+		Log.d("My Tag", "In onClick"); //Log
+		Toast.makeText(this, "Button Pressed", Toast.LENGTH_LONG).show(); //Toast Messsage
 		
 	}
 
