@@ -10,11 +10,9 @@
     android:padding="50dp"
     android:background="#FFE3A0"
     >
-
     <fragment android:name="com.example.singlefragmentusingxml_1.FirstFragment"
               android:id="@+id/headlines_fragment"
               android:layout_width="match_parent"
               android:layout_height="match_parent" />
-    
-    
+        
 </RelativeLayout>

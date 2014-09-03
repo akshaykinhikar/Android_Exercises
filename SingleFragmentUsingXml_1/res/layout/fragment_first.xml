@@ -3,10 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment"
-     android:layout_marginLeft="50dp"
-    android:layout_marginTop="50dp"
-    android:layout_marginRight="50dp"
-    android:layout_marginBottom="50dp"
     android:background="#33B5E5" >
 
     <!-- TODO: Update blank fragment layout -->
@@ -20,7 +16,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="56dp"
-        android:text="hello_From_First_fragment"
+        android:text="hello From First fragment"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     
