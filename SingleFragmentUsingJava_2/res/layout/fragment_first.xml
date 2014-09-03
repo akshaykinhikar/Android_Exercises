@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment"
-    android:layout_margin="50dp"
     android:background="#33B5E5" >
 
     <!-- TODO: Update blank fragment layout -->
