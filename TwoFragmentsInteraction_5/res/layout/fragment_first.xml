@@ -17,7 +17,6 @@
        android:layout_alignParentTop="true"
        android:layout_marginLeft="44dp"
        android:layout_marginTop="144dp"
-       android:background="#99CC00"
-       android:text="To Second Fragment" />
+       android:text="Go To Second Fragment" />
 
 </RelativeLayout>

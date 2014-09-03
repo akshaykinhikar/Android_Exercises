@@ -16,7 +16,7 @@
         android:layout_marginTop="144dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="hello_from_second_fragment"
+        android:text="hello from second fragment"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
