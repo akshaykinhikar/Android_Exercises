@@ -14,6 +14,10 @@ public class MainActivity extends Activity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+	
+	
+	click = (Button) findViewById(R.id.button1);  //definition for button
+	click.setOnClickListener(this);
 	}
 
 	@Override
@@ -25,7 +29,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+		// 
 		
 	}
 
