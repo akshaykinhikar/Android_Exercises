@@ -21,9 +21,10 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	/** Called when the user clicks the Send button */
 	public void gotoNewActivity(View v){
 		Intent intent = new Intent(this, NewActivity.class);
-		
+		startActivity(intent);
 	}
 	
 	

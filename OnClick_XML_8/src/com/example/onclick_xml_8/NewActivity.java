@@ -1,15 +1,14 @@
 package com.example.onclick_xml_8;
 
+import android.app.Activity;
 import android.os.Bundle;
 
-public class NewActivity {
+public class NewActivity extends Activity {
 	
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		onCreate(savedInstanceState);
+		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_new);
-	}
-
-	private void setContentView(int activityMain) {
 		
 	}
 
