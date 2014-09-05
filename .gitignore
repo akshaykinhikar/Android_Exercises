@@ -26,3 +26,6 @@ proguard/
 .metadata/
 
 #Ignoring .classpath
+/Landscape_Portrait_12/.classpath
+Landscape_Portrait_12/.classpath
+
