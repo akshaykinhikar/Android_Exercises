@@ -1,16 +1,54 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="134dp"
-        android:layout_marginTop="84dp"
-        android:text="Hello World" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="WELCOME"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+             android:background="#C93B2A" />
+    
+    </LinearLayout>
+
+    
+        <LinearLayout
+         android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+ <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:textColor="#FFFFFF"
+            android:text="IN"
+            android:gravity="center"
+             android:background="#0085BE" />
+    
+    </LinearLayout>
+    
+    
+        <LinearLayout
+         android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+ <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:textColor="#FFFFFF"
+            android:text="LANDSCAPE-MODE"
+            android:gravity="center"
+              android:background="#0BBB08" />
+       
+    </LinearLayout>
+</LinearLayout>
