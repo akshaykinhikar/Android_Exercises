@@ -1,31 +1,43 @@
 package com.example.listview_with_image_detail;
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.content.res.Resources;
-import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
-
+import android.widget.Toast;
+import android.app.Activity;
 public class MainActivity extends Activity {
-
-	ListView list;
-	int image[] = {R.drawable.image1};
-	
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+  ListView list;
+  String[] web = {
+    "Google Plus",
+      "Twitter",
+      "Windows",
+      "Bing",
+      "Itunes",
+     
+  } ;
+  Integer[] imageId = {
+      R.drawable.image1,
+      R.drawable.image2,
+      R.drawable.image3,
+      R.drawable.image4,
+      R.drawable.image5,
     
-    Resources res=getResources();
-    String[] name = res.getStringArray(R.array.Names);
-    String[] Surname = res.getStringArray(R.array.Surname);
-    
-    list =findViewById(R.id.)
-    
-    }
-
-
-   
-    
+  };
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    CustomList adapter = new
+        CustomList(MainActivity.this, web, imageId);
+    list=(ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view,
+                                        int position, long id) {
+                    Toast.makeText(MainActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
+                }
+            });
+  }
 }
