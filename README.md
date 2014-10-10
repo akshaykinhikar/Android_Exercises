@@ -18,4 +18,4 @@ Android_Exercises
 14. Linear Layout_Java_13		  --> Linear Layout and TextView Are added through Java Code(XML is                                                              Added Dynamically)
 15. Linear_Layout_Using_Xml		  --> Just XML attached to Activity
 16. ScrollView                            --> ScrollView Added to XML
-
+17. ListView_01					-->Simple listview with Toast Message
