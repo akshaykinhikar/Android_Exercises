@@ -4,5 +4,23 @@
     <string name="app_name">ListView_With_Image_Detail</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string-array name="Names">
+        <item >Akshay</item>
+        <item >Rahul</item>
+        <item >Nikhil</item>
+        <item >Vinay</item>
+        <item >Sanyam</item>
+    </string-array>
 
+    <string-array name="Surname">
+        <item >Kinhikar</item>
+        <item >Patil</item>
+        <item >Rane</item>
+        <item >Katdare</item>
+        <item >Muley</item>
+    </string-array>
+    
+    
+    
+    
 </resources>
