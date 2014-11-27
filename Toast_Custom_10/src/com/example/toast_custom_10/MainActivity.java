@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnClickListener {
 	
 	Button btn;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

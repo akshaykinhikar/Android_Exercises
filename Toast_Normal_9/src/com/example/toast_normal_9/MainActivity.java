@@ -19,8 +19,9 @@ public class MainActivity extends Activity implements OnClickListener{
 	
 		btn = (Button)this.findViewById(R.id.btn_for_toast);
 		btn.setOnClickListener(this);
+		
 	}
-
+	
 	public void myToast(){						//Custom Toast
 		Context context = getApplicationContext();
 		CharSequence text = "Button Pressed";

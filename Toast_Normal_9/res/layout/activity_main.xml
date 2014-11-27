@@ -12,10 +12,9 @@
         android:id="@+id/btn_for_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="104dp"
-        android:layout_marginTop="54dp"
-        android:text="Button" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Button" 
+        />
    
 </RelativeLayout>
