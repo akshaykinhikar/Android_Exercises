@@ -1,6 +1,4 @@
 package com.example.putextraintent;
-
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +7,7 @@ import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class SecondActivity extends Activity {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +19,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+				Intent intent = new Intent(SecondActivity.this,MainActivity.class);
 				intent.putExtra("key",((EditText)findViewById(R.id.dataToSend)).getText().toString());
 				startActivity(intent);
 				//notice we dont call finish() here
